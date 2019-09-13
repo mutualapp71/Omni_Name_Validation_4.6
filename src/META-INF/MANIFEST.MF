@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.9.7
+Created-By: 1.8.0_05-b13 (Oracle Corporation)
+Class-Path: lib/com.ibm.mq.jar lib/com.ibm.mqbind.jar lib/com.ibm.mqjm
+ s.jar lib/commons-beanutils-1.8.0-BETA.jar lib/commons-beanutils-bean
+ -collections-1.8.0-BETA.jar lib/commons-beanutils-core-1.8.0-BETA.jar
+  lib/commons-betwixt-0.8.jar lib/commons-codec-1.3.jar lib/commons-co
+ llections-3.2.jar lib/commons-configuration-1.3.jar lib/commons-dbcp-
+ 1.2.2.jar lib/commons-dbutils-1.1.jar lib/commons-digester-1.8.jar li
+ b/commons-httpclient-3.0.1.jar lib/commons-lang-2.2.jar lib/commons-l
+ ogging-1.1.jar lib/commons-logging-adapters-1.1.jar lib/commons-loggi
+ ng-api-1.1.jar lib/commons-pool-1.3.jar lib/connector.jar lib/fsconte
+ xt.jar lib/jasypt-1.0.jar lib/javaee.jar lib/jdom.jar lib/jmock-1.1.0
+ RC1.jar lib/jndi.jar lib/json.jar lib/jta.jar lib/ldap.jar lib/log4j-
+ 1.2.15.jar lib/nls_charset11.jar lib/nls_charset11.zip lib/nls_charse
+ t12.jar lib/postcard.jar lib/providerutil.jar lib/rome-0.8.jar lib/sa
+ ltyfiles.jar lib/xercesImpl.jar lib/classes12.jar lib/NibbsLib.jar li
+ b/NibbsLib_live.jar
+X-COMMENT: Main-Class will be added automatically by build
+Main-Class: main.MainNonThread
+

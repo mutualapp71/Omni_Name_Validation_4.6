@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kastleResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:\TopeWorks\Kastel\XML\SCHEMAS\Response\EXPDTLS_RS.xsd">
+<header><msgType>1</msgType><transCode>EXPDTLS</transCode><transNumber>1404</transNumber><originator>KASTLE</originator><receiver>GLOBUS</receiver><timestamp>20080509 03:44:32</timestamp><legacyCompanyCode>GH0010001</legacyCompanyCode></header><exposureEnquiry><detail><detailLine1><legacyCifId>01092705</legacyCifId><limitAmt>0</limitAmt><limitCurrency>NGN</limitCurrency></detailLine1></detail></exposureEnquiry></kastleResponse>

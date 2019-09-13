@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kastleResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:\TopeWorks\Kastel\XML\SCHEMAS\Response\cifsrch_rs.xsd">
+
+
+<header><msgType>1</msgType><transCode>100</transCode><transNumber>0123456789</transNumber><originator>Flexcube</originator><receiver>Kastel</receiver><timestamp>05-07-2008 10:34:28</timestamp><legacyCompanyCode>LEGACYCOMP</legacyCompanyCode></header><cifSearch><detail><legacyCifId>01000545</legacyCifId><custIdType>AN</custIdType><custIdNo>0021060100054501</custIdNo><custName>OSINOWO, FUNMI O.</custName><birthDate>1952-05-02</birthDate><creditRating> </creditRating><currentAcNo>0021060100054501</currentAcNo><acOpenDate>1998-01-12</acOpenDate><acStatus> </acStatus><acCurrency>NGN</acCurrency><source>F</source><custAddress><country> </country><district>14 FRED ANYIAM STREET SURULERE</district><cityVillage> </cityVillage><street>P.O.BOX 2347 LAGOS</street><pinCode>SURULERE</pinCode><phone>831542</phone></custAddress></detail></cifSearch></kastleResponse>
