@@ -530,11 +530,11 @@ public class ArielProcessor
                 BeneAccountNmbr = result1.get("BeneAccountNmbr").toString();
                 AppCode = result1.get("AppCode").toString();
 
-                if (AppCode.equals("GCPENG")) {
+                if (AppCode.contains("ENG")) {
 
                     sb.append("<BeneAcctDtl><AppCode>GCPENG</AppCode><CMSTransID>");
                 }
-                if (AppCode.equals("EGHGCP")) {
+                if (AppCode.contains("EGH")) {
 
                     sb.append("<BeneAcctDtl><AppCode>GCPEGH</AppCode><CMSTransID>");
                 }
@@ -548,7 +548,8 @@ public class ArielProcessor
                 t++;
 
                 String BenName = NameEnquiry(BankCode, BeneAccountNmbr, AppCode).replaceAll("&", "AND").replaceAll(",", " ");
-                logger.info("<<< NIPPS Beneficiary Name >>> " + BenName);
+                
+                logger.info("<<< NIPPS/Ghips Beneficiary Name >>> " + BenName);
 
                 if (returnCode.equals("00")) {
                     sb.append(BenName).append("</BeneAccountName><BankCode>").append(BankCode).append("</BankCode><StatusCode>").append(returnCode).append("</StatusCode><ErrorCode></ErrorCode><ErrorReason></ErrorReason>");
@@ -571,11 +572,11 @@ public class ArielProcessor
 
             System.out.println("AppCode >>> " + AppCode);
 
-            if (AppCode.equals("GCPENG")) {
+            if (AppCode.contains("ENG")) {
                 sb.append("<BeneAcctDtl><AppCode>GCPENG</AppCode><CMSTransID>");
 
             }
-            if (AppCode.equals("EGHGCP")) {
+            if (AppCode.contains("EGH")) {
                 sb.append("<BeneAcctDtl><AppCode>GCPEGH</AppCode><CMSTransID>");
 
             }
@@ -676,7 +677,7 @@ public class ArielProcessor
             String requestToken = sb.toString();
 
             //if (AppCode.equals("ENGGCP")) {
-            if (AppCode.equals("GCPENG")) {
+            if (AppCode.contains("ENG")) {
 
                 System.out.println("*****************************");
                 System.out.println("***NIPS NAME VALIDATION CALL*");
@@ -777,7 +778,7 @@ public class ArielProcessor
 
                 }
             }
-            if (AppCode.equals("EGHGCP")) {
+            else if (AppCode.contains("EGH")) {
 
                 System.out.println("********************************");
                 System.out.println("***GHIPSS NAME VALIDATION CALL**");
