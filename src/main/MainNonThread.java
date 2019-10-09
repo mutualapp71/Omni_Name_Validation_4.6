@@ -424,8 +424,8 @@ public class MainNonThread {
         byte[] msgArray = null;
         String reqCode = "";
         xmlMsgChecker.connectConsumer();
-        if (!xmlMsgChecker.checkMessage()) {
-       //if (xmlMsgChecker.checkMessage()) {
+        //if (!xmlMsgChecker.checkMessage()) {
+       if (xmlMsgChecker.checkMessage()) {
 
             System.out.println("Inside here..");
             try {
@@ -437,9 +437,9 @@ public class MainNonThread {
                     System.out.println("ECIB+");
                     logger.info("ECIB+");
 
-                    //msgArray = xmlMsgReceiver.receiveMessage();
+                    msgArray = xmlMsgReceiver.receiveMessage();
                     //msgArray = "<Msg><MsgHeader><ServiceId>2019062410007</ServiceId><TxnCode>1050</TxnCode></MsgHeader><MsgBody><BeneAcctDtl><AppCode>EGHGCP</AppCode><CMSTransID>CMS1561396714448</CMSTransID><BeneAccountNmbr>2062179221018</BeneAccountNmbr><BankCode>GH020100</BankCode></BeneAcctDtl></MsgBody></Msg>".getBytes();
-                    msgArray="<Msg><MsgHeader><ServiceId>2019100811945</ServiceId><TxnCode>1050</TxnCode></MsgHeader><MsgBody><BeneAcctDtl><AppCode>EGHGCP</AppCode><CMSTransID>CMS1570538776327</CMSTransID><BeneAccountNmbr>2121032251590</BeneAccountNmbr><BankCode>GH230100</BankCode></BeneAcctDtl></MsgBody></Msg>".getBytes();
+                    //msgArray="<Msg><MsgHeader><ServiceId>2019100811945</ServiceId><TxnCode>1050</TxnCode></MsgHeader><MsgBody><BeneAcctDtl><AppCode>EGHGCP</AppCode><CMSTransID>CMS1570538776327</CMSTransID><BeneAccountNmbr>2121032251590</BeneAccountNmbr><BankCode>GH230100</BankCode></BeneAcctDtl></MsgBody></Msg>".getBytes();
                     //msgArray="<Msg><MsgHeader><ServiceId>2019091110015</ServiceId><TxnCode>1050</TxnCode></MsgHeader><MsgBody><BeneAcctDtl><AppCode>GCPENG</AppCode><CMSTransID>PAY1568207310519</CMSTransID><BeneAccountNmbr>0003525240</BeneAccountNmbr><BankCode>058152052</BankCode></BeneAcctDtl></MsgBody></Msg>".getBytes();
 
                 }
