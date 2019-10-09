@@ -620,10 +620,10 @@ public class ArielProcessor
             nips_validation_url = prop.getProperty("NIPS_URL");
             ghipss_validation_url = prop.getProperty("GHIPSS_URL");
 
-            System.out.println("GHIPSS_URL >>> " + prop.getProperty("GHIPSS_URL"));
+            System.out.println("GHIPSS_URL >>> " + ghipss_validation_url);
             System.out.println("NIPS_URL >>> " + prop.getProperty("NIPS_URL"));
 
-            logger.info("GHIPSS_URL >>> " + prop.getProperty("GHIPSS_URL"));
+            logger.info("GHIPSS_URL >>> " + ghipss_validation_url);
             logger.info("NIPS_URL >>> " + prop.getProperty("NIPS_URL"));
 
         } catch (IOException ex) {
@@ -846,6 +846,8 @@ public class ArielProcessor
                 logger.info("Ghipss Request >>> " + gipsReq);
 
                 wsResult2 = RestPost2.post(ghipss_validation_url, gipsReq, "POST", "HTTPS");
+                
+                System.out.println("Ghipss Reponse >>> " + wsResult2);
 
                 String hdr = wsResult2.get("hostHeaderInfo").toString();
                 JsonObject hd = (JsonObject) new JsonParser().parse(hdr);
